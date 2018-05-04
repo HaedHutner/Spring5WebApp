@@ -5,15 +5,18 @@
         <title>Authors</title>
     </head>
     <body>
-        <h1>Authors</h1>
-        <table border="1" width="100%">
+        <h1>Authors</h1><a href="/authors/form">Add New</a><br>
+        <table style="border-width: 1px;" border="1" width="100%">
             <tr>
                 <th>ID</th>
                 <th>Name</th>
+                <th colspan="2">Actions</th>
             </tr>
             <tr th:each="author : ${authors}">
                 <td th:text="${author.id}"></td>
                 <td th:text="${author.firstName + ' ' +  author.lastName}"></td>
+                <td><a href="/authors/update">Update</a></td>
+                <td><a href="/authros/delete">Delete</a></td>
             </tr>
         </table>
     </body>

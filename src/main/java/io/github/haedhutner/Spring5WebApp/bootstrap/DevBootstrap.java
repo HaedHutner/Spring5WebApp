@@ -32,24 +32,22 @@ public class DevBootstrap {
     }
 
     private void initData() {
-
-        Publisher winterPublishing = new Publisher( "Winter Publishing Co. Ltd.", "Magic Street 123" );
-        publishers.save(winterPublishing);
-
-        Author eric = new Author("Eric", "Evans");
-        Book ddd = new Book( "Domain Driven Design", "2415151", winterPublishing );
-        ddd.getAuthors().add(eric);
-
-        authors.save(eric);
-        books.save(ddd);
-
-        Author ned = new Author("Ned", "Stark");
-        Book winter = new Book( "Winter Is Coming", "93256132", winterPublishing );
-        winter.getAuthors().add(ned);
-
-        authors.save(ned);
-        books.save(winter);
-
+//        Publisher winterPublishing = new Publisher( "Winter Publishing Co. Ltd.", "Magic Street 123" );
+//        publishers.save(winterPublishing);
+//
+//        Author eric = new Author("Eric", "Evans");
+//        Book ddd = new Book( "Domain Driven Design", "2415151", winterPublishing );
+//        ddd.getAuthors().add(eric);
+//
+//        authors.save(eric);
+//        books.save(ddd);
+//
+//        Author ned = new Author("Ned", "Stark");
+//        Book winter = new Book( "Winter Is Coming", "93256132", winterPublishing );
+//        winter.getAuthors().add(ned);
+//
+//        authors.save(ned);
+//        books.save(winter);
     }
 
     public void works() {
